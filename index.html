@@ -10,10 +10,27 @@
   <h1>サンプルページです</h1>
   <br>
   <button onclick="clickEvent()">ボタン</button>
+  <br>
+  <form>
+    <input type="button" value="表示" onclick="hyoji1(0)">
+    <input type="button" value="非表示" onclick="hyoji1(1)">
+  </form>
 </body>
 <script>
   function clickEvent() {
     window.open("https://rainy6.github.io/js-browser/");
+  }
+
+  function hyoji1(num)
+  {
+    if (num == 0)
+    {
+      document.getElementById("disp").style.display="block";
+    }
+    else
+    {
+      document.getElementById("disp").style.display="none";
+    }
   }
 </script>
 </html>
