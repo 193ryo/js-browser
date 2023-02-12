@@ -9,16 +9,20 @@
 <body>
   <h1>サンプルページです</h1>
   <br>
-  <button onclick="clickEvent()">ボタン</button>
-  <a href="https://github.com/rainy6" target="_blank" rel="noopener">リンク</a>
-  <a href="https://twitter.com/Pharao444/status/1622223165048111105?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1622223165048111105%7Ctwgr%5Ef38cb6ccd07606883d7e15cc51c7d662e7f51570%7Ctwcon%5Es1_&amp;ref_url=http%3A%2F%2Fjin115.com%2Farchives%2F52364598.html" target="_blank" rel="noopener">DPリンク</a>
+  <button onclick="clickEvent()">window open ボタン</button>
+  <br>
+  <a href="https://github.com/rainy6" target="_blank" rel="noopener">a リンク</a>
+  <br>
+  <a href="https://twitter.com/Pharao444/status/1622223165048111105?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1622223165048111105%7Ctwgr%5Ef38cb6ccd07606883d7e15cc51c7d662e7f51570%7Ctwcon%5Es1_&amp;ref_url=http%3A%2F%2Fjin115.com%2Farchives%2F52364598.html" target="_blank" rel="noopener">Twitter リンク</a>
   <form>
-    <input type="button" value="リンクを開く" onClick="document.location='https://www.sejuku.net/blog/';">
+    <input type="button" value="location リンクを開く" onClick="document.location='https://www.sejuku.net/blog/';">
   </form>
+  <br>
+  <a href="safari:https://github.com/rainy6" target="_blank" rel="noopener">scheme リンク</a>
 </body>
 <script>
   function clickEvent() {
-    window.open("https://twitter.com/Pharao444/status/1622223165048111105?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1622223165048111105%7Ctwgr%5Ef38cb6ccd07606883d7e15cc51c7d662e7f51570%7Ctwcon%5Es1_&amp;ref_url=http%3A%2F%2Fjin115.com%2Farchives%2F52364598.html");
+    window.open("https://www.google.com","mywindow","width=300,height=300");
   }
 </script>
 </html>
