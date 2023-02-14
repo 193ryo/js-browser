@@ -7,44 +7,53 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>サンプルページです</h1>
+  <h1>URLリンクページ</h1>
   <br>
-  <button onclick="clickEvent()">window open ボタン</button>
   <br>
-  <a href="https://github.com/rainy6" target="_blank" rel="noopener">a リンク</a>
+  <button onclick="clickEvent()">JavaScript window.open ボタン</button>
   <br>
-  <a href="https://twitter.com/Pharao444/status/1622223165048111105?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1622223165048111105%7Ctwgr%5Ef38cb6ccd07606883d7e15cc51c7d662e7f51570%7Ctwcon%5Es1_&amp;ref_url=http%3A%2F%2Fjin115.com%2Farchives%2F52364598.html" target="_blank" rel="noopener">Twitter リンク</a>
+  <br>
+  <a href="https://www.google.com">aタグ リンク</a>
+  <br>
+  <br>
+  <a href="https://www.google.com" target="_blank" rel="noopener">aタグ リンク</a>
+  <br>
+  <br>
+  <p>Twitterのアプリを入手から、ストア起動ができるか実験</p>
+  <a href="https://twitter.com/Twitter">Twitter リンク</a>
+  <br>
+  <br>
   <form>
-    <input type="button" value="location リンクを開く" onClick="document.location='https://www.sejuku.net/blog/';">
+    <input type="button" value="document.location リンク" onClick="document.location='hhttps://www.google.com';">
   </form>
   <br>
-  <a href="https://github.com/rainy6">デフォルト リンク</a>
   <br>
-  <a href="google-chrome:https://github.com/rainy6">scheme リンク chrome1</a>
+  <a href="googlechrome:https://github.com/rainy6">URL Scheme リンク chrome</a>
   <br>
-  <a href="googlechrome:https://github.com/rainy6">scheme リンク chrome2</a>
   <br>
-  <a href="googlechrome://github.com/rainy6">scheme リンク chrome3</a>
+  <a href="googlechrome://github.com/rainy6">URL Scheme リンク chrome httpsレス</a>
   <br>
-  <a href="google-chrome://github.com/rainy6">scheme リンク chrome3</a>
   <br>
-  <a href="safari:https://github.com/rainy6">scheme リンク safari1</a>
+  <a href="safari:https://github.com/rainy6">URL Scheme リンク safari</a>
   <br>
-  <a href="safari://github.com/rainy6">scheme リンク safari2</a>
   <br>
-  <a href="microsoft-edge:https://github.com/rainy6">scheme リンク edge</a>
+  <a href="safari://github.com/rainy6">URL Scheme リンク safari httpレス</a>
   <br>
-  <a href="https://www.google.com/?hl=ja" target="_blank">google.com</a>
   <br>
-  <a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;package=com.android.chrome;end">強制</a>
+  <a href="https://www.google.com/?hl=ja" target="_blank">Target _blankを指定</a>
   <br>
-  <a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;action=android.intent.action.VIEW;end;">選択</a>
   <br>
-  <a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end"> Take a QR code </a>
+  <a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;package=com.android.chrome;end">URL Scheme 強制的にChromeを開く</a>
+  <br>
+  <br>
+  <a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;action=android.intent.action.VIEW;end;">URL Scheme ブラウザ選択</a>
+  <br>
+  <br>
+  <a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end">URL Scheme Intent</a>
 </body>
 <script>
   function clickEvent() {
-    window.open("https://www.google.com","mywindow","width=300,height=300");
+    window.open("https://www.google.com");
   }
 </script>
 </html>
